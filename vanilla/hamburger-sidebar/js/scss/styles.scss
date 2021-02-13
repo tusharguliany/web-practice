@@ -1,0 +1,64 @@
+$dark-theme-background: rgb(68, 68, 68);
+$dark-theme-background-active: rgb(105, 105, 105);
+$dark-theme-color: #fff;
+$drawer-padding: 18px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    .drawer {
+        display: flex;
+        .sidebar {
+            position: sticky;
+            top: 0;
+            background-color: $dark-theme-background;
+            color: $dark-theme-color;
+            height: 100vh;
+            .sidebar__item {
+                display: flex;
+                padding: $drawer-padding;
+                .sidebar__item--text {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    max-width: 0px;
+                    transition: 0.2s all ease-in-out;
+                }               
+            }
+            .sidebar__item--active {
+                background-color: $dark-theme-background-active;
+            }
+            ul li {
+                cursor: pointer;
+            }
+        }
+        .content {
+            flex-grow: 1;
+            height: min-content;
+            .header {
+                position: sticky;
+                top: 0;
+                background-color: $dark-theme-background;
+                color: $dark-theme-color;
+                .header--content {
+                    display: block;
+                    padding: $drawer-padding;
+                    p {
+                        width: 100%;
+                        
+                    }
+                }
+            }
+            .main-content {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.active {
+    background-color: $dark-theme-color;
+    color: $dark-theme-background;   
+}

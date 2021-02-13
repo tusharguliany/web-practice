@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.accordian .accordian__button {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  font-size: large;
+  font-weight: 500;
+  background-color: #333333;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  color: #ffffff;
+}
+
+.accordian .accordian__button::after {
+  content: '\25BE';
+  float: right;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.accordian .accordian__button--active {
+  background-color: #555555;
+}
+
+.accordian .accordian__button--active::after {
+  content: '\25B4';
+}
+
+.accordian .accordian__content {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s;
+  transition: max-height 0.2s;
+  padding: 0 15px;
+  font-family: sans-serif;
+  background-color: #eeeeee;
+}
+
+.accordian .accordian__content p {
+  padding: 10px 0;
+}
+
+.m-2 {
+  margin: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+.ml-2 {
+  margin-left: 10px;
+}
+
+.mt-2 {
+  margin-top: 10px;
+}
+
+.mr-2 {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
