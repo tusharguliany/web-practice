@@ -1,0 +1,9 @@
+<div class="sidebar">
+    <ul>
+        <li id="sidebar__hamburger" (click)="toggleSidenav($event)" class="active"><i class="fas fa-bars"></i></li>
+        <li *ngFor="let option of links" class="sidebar__option" (click)="handleNavigation(option)" routerLinkActive="active">
+            <i class="{{option.icon}}"></i>
+            <span class="sidebar__option--text">{{option.label}}</span>
+        </li>
+    </ul>
+</div>

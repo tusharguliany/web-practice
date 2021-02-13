@@ -1,0 +1,10 @@
+@import './../../../../assets/styles/settings/variables';
+
+.wrapper {
+    display: flex;
+    .content {
+        flex-grow: 1;
+        .main-content {
+        }
+    }
+}

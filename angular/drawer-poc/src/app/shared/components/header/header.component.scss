@@ -1,0 +1,16 @@
+@import './../../../../assets/styles/settings/variables';
+
+.header {
+    padding: $content-padding;
+    background-color: $dark-theme-background;
+    color: $dark-theme-color;
+    position: sticky;
+    top: 0;
+}
+
+p {
+    margin: 0;
+    span {
+        cursor: pointer;
+    }
+}

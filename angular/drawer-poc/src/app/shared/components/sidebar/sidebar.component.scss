@@ -1,0 +1,35 @@
+@import './../../../../assets/styles/settings/variables';
+
+.sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: $dark-theme-background;
+    color: $dark-theme-color;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            cursor: pointer;
+            padding: $content-padding;
+        }
+        .sidebar__option {
+            display: flex;
+            .sidebar__option--text {
+                overflow: hidden;    
+                white-space: nowrap;
+                max-width: 0px;
+                transition: 0.2s all;
+            }
+        }
+        .sidebar__option:hover {
+            background-color: $dark-theme-background-active;
+        }
+    }
+}
+
+.active {
+    background-color: $dark-theme-color;
+    color: $dark-theme-background;
+}
